@@ -1,0 +1,53 @@
+.Menu {
+    position: absolute;
+    background-color: $firstColor;
+    top: 100%;
+    left:0;
+    width:100%;
+    padding-bottom:1rem;
+    padding-left: .6rem;
+    padding-right:.6rem;
+
+    transform: scaleY(0);
+    transform-origin: top left;
+    transition: transform .2s;
+
+    &.active {
+        transform: scaleX(1);
+    }
+
+    @include from(medium) {
+        position: static;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding-bottom: 0;
+
+        transform: scaleX(1);
+    }
+
+    &__container {
+        @include from(medium) {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+
+    &__link {
+        padding-top:1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+
+        @include from(medium) {
+            border-bottom: none;
+            padding-top: 0;
+            padding-bottom: 0;
+            padding-right: 1rem;
+        }
+
+        &:hover {
+            color:$blueColor;
+        }
+    }
+}

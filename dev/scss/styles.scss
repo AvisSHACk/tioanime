@@ -1,0 +1,21 @@
+//config
+@import "config/vars";
+@import "config/mixins";
+
+//colors
+@import "theme/colors";
+@import "layouts/layouts";
+
+//basee
+@import "base/base";
+
+//components
+@import "components/header";
+@import "components/nav";
+@import "components/search";
+@import "components/anime";
+@import "components/footer";
+
+//utils
+
+@import "utils/utils";

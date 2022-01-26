@@ -1,0 +1,18 @@
+.Menu {
+    &__search {
+        display: flex;
+    }
+    &__inputSearch {
+        width:100%;
+        padding:.6rem .4rem;
+        background:$darkColor;
+        border-radius: 12px 0 0 12px;
+        color:$textColor;
+    }
+
+    &__submit {
+        border-radius: 0 12px 12px 0;
+        background:$darkColor;
+        color: $textColor;
+    }
+}

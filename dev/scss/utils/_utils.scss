@@ -1,0 +1,15 @@
+.Header__menuicon {
+    background:#00000080;
+    padding:.8rem 1rem;
+    border-radius: 50%;
+    color:$textColor;
+
+    &::before {
+        position: relative;
+        top:2px;
+    }
+
+    @include from(medium) {
+        display: none;
+    }
+}

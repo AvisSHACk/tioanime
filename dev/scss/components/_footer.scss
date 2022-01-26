@@ -1,0 +1,13 @@
+.footer {
+    padding: 2rem 0;
+    background-color: $secondColor;
+
+    &__containerNav {
+        margin-top: 1rem;
+        display: flex;
+    }
+
+    &__item {
+        margin-left: 1rem;
+    }
+}
